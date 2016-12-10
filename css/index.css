@@ -1,0 +1,102 @@
+body {
+	font-family: "微软雅黑";
+	background: #efefef;
+}
+#cartTable {
+	width: 1200px;
+	border-collapse: collapse;
+	text-align: center;
+	background: #fff;
+}
+tr,td{
+	cursor: pointer;
+}
+tr:first-child{
+	height: 72px;
+}
+tr{
+	height: 120px;
+	border-bottom: 1px solid #efefef;
+}
+td img {
+	margin-bottom: -30px;
+}
+td .text {
+	line-height: 120px;
+}
+td .count {
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+td .count .reduce,.add {
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 25px;
+	color: #666;
+}
+td .count .reduce:hover,.add:hover{
+	background: #ccc;
+}
+td .count input {
+	width: 60px;
+	height: 36px;
+	border: 0;
+	float: left;
+	text-align: center;
+	font-size: 18px;
+}
+td.unitPrice {
+	color: #ff6700;
+}
+td .delete {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 30px;
+
+}
+td .delete:hover {
+	color: #fff;
+	background: #ff6700;
+}
+.foot {
+	width: 1200px;
+	height: 50px;
+	background: #fff;
+	margin-top: 20px;
+	
+	line-height: 50px;
+}
+.foot .selected {
+	float: left;
+	margin-left: 20px;
+}
+.foot .selected span {
+	color: #ff6700;
+}
+.foot .total {
+	float: right;
+	color: #ff6700;
+	margin-right: 40px;
+}
+.foot .total #priceTotal {
+	font-size: 30px;
+}
+.foot .statements {
+	float: right;
+	width: 200px;
+	background: #ff6700;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+}

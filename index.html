@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿小米购物车</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<table id="cartTable">
+		<thead>
+			<tr>
+				<td><label><input type="checkbox" class="check check-all">全选</label></td>
+				<td>商品名称</td>
+				<td>单价</td>
+				<td>数量</td>
+				<td>小计</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><label><input type="checkbox" class="check"></label></td>
+				<td><img src="img/T1FtKgBvZv1RXrhCrK!80x80.jpg" alt=""><span class="text">小米多功能都市休闲胸包 深灰</span></td>
+				<td><span class="unitPrice">59</span>元</td>
+				<td><div class="count"><span class="reduce">-</span><input type="text" value="1" id="input-count"><span class="add">+</span></div></td>
+				<td class="unitPrice"><span id="subTotal">59</span>元</td>
+				<td><span class="delete">x</span></td>
+			</tr>
+			<tr>
+				<td><label><input type="checkbox" class="check"></label></td>
+				<td><img src="img/pms_1468288696.74437986!80x80.jpg" alt=""><span class="text">米家LED随身灯 增强版 蓝色</span></td>
+				<td><span class="unitPrice">11.9</span>元</td>
+				<td><div class="count"><span class="reduce">-</span><input type="text" value="1" id="input-count"><span class="add">+</span></div></td>
+				<td class="unitPrice"><span id="subTotal">11.9</span>元</td>
+				<td><span class="delete">x</span></td>
+			</tr>
+			<tr>
+				<td><label><input type="checkbox" class="check"></label></td>
+				<td><img src="img/T1zLbvB4xv1RXrhCrK!80x80.jpg" alt=""><span class="text">小米移动电源20000mAh 白色</span></td>
+				<td><span class="unitPrice">149</span>元</td>
+				<td><div class="count"><span class="reduce">-</span><input type="text" value="1" id="input-count"><span class="add">+</span></div></td>
+				<td class="unitPrice"><span id="subTotal">149</span>元</td>
+				<td><span class="delete">x</span></td>
+			</tr>
+			<tr>
+				<td><label><input type="checkbox" class="check"></label></td>
+				<td><img src="img/T1xxVTBghv1RXrhCrK!80x80.jpg" alt=""><span class="text">彩虹5号电池（10粒装） 标准装</span></td>
+				<td><span class="unitPrice">9.9</span>元</td>
+				<td><div class="count"><span class="reduce">-</span><input type="text" value="1" id="input-count"><span class="add">+</span></div></td>
+				<td class="unitPrice"><span id="subTotal">9.9</span>元</td>
+				<td><span class="delete">x</span></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="foot">
+		<div class="statements">结 算</div>
+		<div class="selected" id="selected">已选商品 <span id="selectedTotal">0</span> 件</div>
+		<div class="total">合计：<span id="priceTotal">0.00</span>元</div>
+	</div>
+</body>
+</html>
